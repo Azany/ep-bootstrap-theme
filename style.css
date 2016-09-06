@@ -1,0 +1,708 @@
+/* 
+Theme Name: Everypony 2016 Bootstrap
+Theme URI: Pony
+Author: Everypony.ru team
+Author URI: Pony
+Description: Everypony 2016 Bootstrap is a modernized Everypony 2012 theme.
+Version: 1.2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ags: one-column, two-columns, right-sidebar, custom-menu, blog
+Text Domain: Everypony-2016-Bootstrap
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Georgia, Times, serif;
+	text-decoration: none;
+	color: #444444;
+    font-size:16px;
+    margin: 10px;
+    background-image: url("img/body-bg.png");
+    background-attachment: fixed;
+    background-color: aliceblue;
+}
+
+/*Captions*/
+
+.wp-caption {
+    margin-bottom: 1.75em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0;
+}
+
+.wp-caption .wp-caption-text {
+    color: #686868;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-style: italic;
+    line-height: 1.6153846154;
+    padding-top: 0.5384615385em;
+}
+/* Alignment */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1px;
+}
+.alignright {
+    display: block;
+    float: right;
+
+}
+.aligncenter, .xoxo img {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.day {
+    background:transparent url('img/body-bg.png');
+    background-attachment: fixed;
+}
+.night {
+    color: #9b9b9b;
+    background:transparent url('img/body-bg-night.png');
+    background-attachment: fixed;
+}
+ul {
+    list-style:none;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight:normal;
+    font-size:3rem;
+    color:#333333;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.night h1, .night h2, .night h3, .night h4 {
+    color:#9b9b9b;
+}
+
+blockquote {
+    blockquote
+    background-color:#f5f5f5;
+    font-style: italic;
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.night blockquote {
+    background-color: #142541;
+    border-left: 5px solid #163755;
+}
+
+embed, iframe, object, video {
+    max-width: 100%;
+}
+
+
+.container {
+	background-color: #f9f9f9;
+    border-radius: 12px 12px 12px 12px;
+}
+.night .container {
+    background-color: #00001e;
+    opacity: 0.85;
+
+}
+.navbar-offcanvas{
+    background-color: #fafae8 ;
+}
+
+/* шапка */
+.ep-links {
+    height: 78px;
+    margin: auto;
+}
+.page-header{
+    margin: auto;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-bottom: 0px;
+    background-image: url("img/bg-header.jpg");
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 0px 0px;
+}
+.night .page-header{
+    background-image: url("img/bg-header.jpg");
+    opacity: 0.85;
+
+}
+
+/*верхнее меню*/
+.ep-menu{
+    /*margin: 0px 15px 2px 0px;*/
+    /*height: 57px;*/
+    margin: auto;
+}
+.navbar-ep-main {
+    /*margin-bottom: 2px;*/
+    /*border: none;*/
+    font-size: 2.8rem;
+    /*margin: 0px 30px 4px 15px;*/
+}
+
+.navbar-ep-main .navbar-brand {
+    font-size: 5rem;
+    padding-top: 10px;
+    color: #cdcae9;
+}
+.navbar-ep-main .navbar-brand:hover,
+.navbar-ep-main .navbar-brand:focus {
+    color: #fafae8;
+    background-color: transparent;
+}
+
+.navbar-ep-main .navbar-nav > li > a {
+    color: #fafae8;
+}
+.navbar-ep-main .navbar-nav > li > a:hover,
+.navbar-ep-main .navbar-nav > li > a:focus {
+    color: #cdcae9;
+    background-color: transparent;
+}
+.navbar-ep-main .icon-bar {
+    background-color: #fff;
+}
+.navbar-right {
+    margin: auto;
+}
+/* Арт-блок с анонсом серий и цитатником */
+.ticket{
+    background-image: url("img/ticket.png");
+}
+
+.sourcelink {
+    position:absolute;
+    opacity:0;
+    right: 15px;
+    top: 10px;
+    transition-property:opacity;
+    transition-duration:0.5s;
+    padding:4px 8px;
+    /*margin: 2% 0 0 58%;*/
+    font-size:11px;
+    background-color:rgba(50,50,50,0.4);
+    color:#FAFAE8;
+    border-radius: 5px;
+}
+.sourcelink:hover, .sourcelink:focus {
+    color:#CDCAE9;
+}
+
+.gallery:hover .sourcelink {
+    opacity:1;
+    transition-property:opacity;
+    transition-duration:0.5s;
+}
+
+.pony-time {
+    width: 168px;
+    height: 99px;
+    top: 50px;
+    left: 20px;
+    background: transparent url('img/ticket.png') 0 0 no-repeat;
+    position: absolute;
+    font-size: 14px;
+    color: #a37900;
+    text-align: center;
+    padding: 24px 27px 0px 24px;
+}
+.pony-time span {
+    font-size:14px;
+    font-weight:bold;
+    display:block;
+    font-family:Georgia, 'Times New Roman', serif;
+}
+
+.luna-quote {
+    width: 177px;
+    height: 108px;
+    background:transparent url('img/luna-quote.png') 0 0 no-repeat;
+    background-size: contain;
+    position:absolute;
+    color:#333;
+    text-align:center;
+    font-size:11px;
+    line-height:15px;
+}
+
+.header-pony {
+    display: table-cell;
+    vertical-align: middle;
+    height: 55px;
+    width: 142px;
+}
+
+/*поиск*/
+.searchform {
+    position:absolute;
+    top: 10px;
+    left:20px;
+}
+.searchform input {
+    border:1px solid #999;
+    padding:4px 4px 4px 6px;
+    border-radius:5px;
+    font-style:italic;
+    color:#444;
+    width:168px;
+    height:26px;
+    float:left;
+    background-color:rgba(255,255,255,0.7);
+}
+
+/*Сыылка на автора арта*/
+.servicelinks {
+    font-family: Verdana, Arial, sans-serif;
+    /*float:right;*/
+    width:100%;
+    padding:0px 15px 0px 15px;
+    margin: auto;
+}
+.servicelinks li {
+    float:right;
+    margin:0 0 0 9px;
+}
+.servicelinks a {
+    font-size:12px;
+    color:#cdcae9;
+    text-decoration:none;
+}
+.servicelinks a:focus,
+.servicelinks a:hover {
+    color: #fafae8;;
+}
+.art{
+    margin: auto;
+    /*float: left;*/
+    left: auto;
+}
+
+/*Меню навиграции  - рубрики*/
+
+.menu-ep-topics{
+    background-image: url("img/bg-topics.jpg");
+}
+
+.navbar-ep-topics {
+    margin-bottom: 0px;
+    border: none;
+    font-size: 2.2rem;
+    background-color: transparent;
+}
+
+.navbar-ep-topics .navbar-brand {
+    color: #333;
+    font-size: 2.2rem;
+}
+.navbar-ep-topics .navbar-brand:hover,
+.navbar-ep-topics .navbar-brand:focus {
+    color: #333;
+    background-color: transparent;
+}
+.navbar-ep-topics .navbar-nav > li > a {
+    color: #337ab7;
+}
+.navbar-ep-topics .navbar-nav > li > a:hover,
+.navbar-ep-topics .navbar-nav > li > a:focus {
+    color: #23527c;
+    background-color: transparent;
+}
+
+/*посты*/
+
+.ep-content{
+    margin: 10px 0 0 0;
+}
+.pageItem{
+    padding-bottom: 20px;
+    padding-right: 35px;
+}
+
+.postItem{
+    padding: 0px 30px 50px 0px;
+}
+
+.postItem .meta {
+    font-family: Verdana, Arial, sans-serif;
+    font-size:12px;
+    color:#888;
+    overflow:hidden;
+    padding: 0px 0px 5px 0px;
+}
+
+.postItem .categs a {
+    font-family: Verdana, Arial, sans-serif;
+    color: #444444;
+}
+
+.postItem .meta-comments .m-c-links {
+    font-weight:bold;
+}
+
+.meta-comments {
+    font-family: Verdana, Arial, sans-serif;
+    font-size:12px;
+    color:#888;
+    overflow:hidden;
+    padding: 0px 0px 25px 0px;
+}
+/* Сайдбар */
+
+/* Стиль заголовка виджетов*/
+.widget_title {
+    display: none;
+}
+
+/* Ссылки виджета "Страницы" */
+.page_item {
+    font-size:17px;
+    background: url('img/moon-icon.png') no-repeat scroll 0 1px transparent;
+    padding: 4px 0px 4px 0px;
+    margin: 6px auto;
+}
+
+.night .page_item {
+    background: url('img/moon-icon-inv.png') no-repeat scroll 0 1px transparent;
+}
+
+.page_item a {
+    margin: 0px 0px 0px 30px;
+}
+
+.textwidget li {
+    padding:4px 0 4px 0;
+    margin-left:20px;
+}
+
+.textwidget h3 {
+    padding:8px 0 4px;
+}
+
+/*Произвольное меню*/
+.menu-item {
+    font-size:17px;
+    background: url('img/moon-icon.png') no-repeat scroll 0 1px transparent;
+    padding: 4px 0px 4px 0px;
+    margin: 6px auto;
+}
+.menu-item a {
+    margin: 0px 0px 0px 30px;
+}
+
+/* Конец сайдбара */
+
+
+
+/*пагинация*/
+.page-numbers dots{
+    border: 0px;
+}
+
+.pagination-title{
+    background-color: #f9f9f9;
+    border: 0px;
+}
+.pager li > a, .pager li > span{
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/*комментарии*/
+.commentlist {
+    list-style:none;
+    list-style-position:outside;
+    display:block;
+    margin: 0px 35px 0px 0px;
+    padding:0;
+    padding-bottom:10px;
+}
+.commentlist ul {
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0;
+}
+.commentlist li {
+    margin: 5px 0 0 0;
+    padding:5px;
+    position:relative;
+    background-color: #ffffff;
+    border-radius:6px;
+}
+
+.night .commentlist li{
+    background-color: #161f3d;
+}
+.commentlist > li {
+    /*border: 1px solid #C9CFFF;*/
+}
+.commentlist li img {
+    border-radius: 10px;
+}
+.commentlist li img {
+    /*border: 1px solid #ddd;*/
+}
+/*.commentlist li p{*/
+    /*font-size: 15px;*/
+    /*margin: 0px;*/
+/*}*/
+.commentlist li .comment-meta, .commentlist li .text  {
+    margin:5px;
+}
+.commentlist li .comment-meta span {
+    font-size:12px;
+    color:#999;
+}
+
+.commentlist li .comment-meta {
+    font-size:14px;
+}
+
+.commentlist li .gravatar {
+    width:40px;
+    height:40px;
+    float: left;
+}
+.comment-reply-link {
+    font-size:14px;
+    padding-left:5px;
+}
+.commentlist li .children li {
+    margin-top:0px;
+    padding: 0px 0px 0px 30px;
+    border-bottom:none;
+    overflow:hidden;
+
+}
+
+.commentlist li .children li .gravatar {
+    top:16px;
+}
+
+.commentmetadata p {
+    margin: 0px 0 0 50px;
+}
+
+
+/*.postItem ul {*/
+    /*list-style-type:disc;*/
+    /*list-style-position:inside;*/
+/*}*/
+
+/*Форма отправки комментария*/
+.respond {
+    display: block;
+    clear: both;
+    padding-right: 35px;
+}
+.respond h2 {
+    padding-bottom:5px;
+}
+.commentform label {
+    display:block;
+    padding:5px 0;
+}
+.comment-form-author,
+.comment-form-email {
+    width: 50%;
+}
+
+.form-control {
+    font-size: 16px;
+    /*border-color: #C9CFFF;*/
+    /*background-color: #f9f9f9;*/
+}
+.form-control:focus {
+    border-color: #888;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgb(203, 203, 203), 0 0 8px rgb(238, 238, 238);
+    box-shadow: inset 0 1px 1px rgb(203, 203, 203), 0 0 8px rgb(238, 238, 238);;
+}
+
+.night .form-control {
+    color: #555;
+    background-color: #161f3d;
+    border: 1px solid #000d2f;
+}
+.night .form-control:focus {
+    border-color: #000d2f;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0, 13, 47), 0 0 8px rgb(22, 31, 61);
+    box-shadow: inset 0 1px 1px rgb(0, 13, 47), 0 0 8px rgb(22, 31, 61);;
+}
+.night .btn-default{
+    color: #9b9b9b;
+    background-color: #161f3d;
+    border-color: #161f3d;
+}
+
+/*Пагинация - комментарии*/
+.emm-paginate a, .emm-paginate a:hover, .emm-paginate a:active, .emm-paginate .emm-current, .emm-paginate .current{border-radius:2px;}
+.emm-paginate {padding:10px 0; overflow:hidden; clear:both; text-align:center;}
+.emm-paginate a {border:1px solid #54c5fc; color:#1fa2e1; margin-right:5px; padding:3px 8px; text-align:center; text-decoration:none; }
+.emm-paginate .emm-title { margin-right:4px;}
+.emm-paginate .emm-gap { margin-right:4px;}
+.emm-paginate a:hover, .emm-paginate a:active, .emm-paginate .emm-current { color:#fff; background:#1fa2e1; border:1px solid #54c5fc; margin-right:5px; padding:3px 8px;}
+.emm-paginate .dots {color:#999; margin-right:4px;}
+.emm-paginate .current { color:#fff; background:#1fa2e1; border:1px solid #54c5fc; margin-right:5px; padding:3px 8px;}
+
+
+.night .pager li > a, .night .pager li > span {
+    background-color: #161f3d;
+    border: 0px;
+}
+
+.derpy{
+    margin: auto;
+    padding-bottom: 2px;
+}
+
+/*подвал*/
+.footer{
+    font-family: Verdana, Arial, sans-serif;
+    color: #cdcae9;
+    font-size: 11px;
+    line-height: 200%;
+    background-image: url("img/bg-footer.jpg");
+    padding: 10px 0px 10px 0px;
+    border-radius: 0 0 8px 8px;
+}
+
+.scrollup {
+    position: fixed;
+    opacity: 0.8;
+    padding: 10px 10px 10px; /* отступы */
+    font-size: 4rem;
+    /*background: #cdcae9;;*/
+    border-radius: 5px; /* скругление углов */
+    right: 0px; /* отступ слева */
+    bottom: 20px; /* отступ снизу */
+    display: none; /* спрятать блок */
+    cursor: pointer;
+}
+
+/*Иконки специальных ссылок*/
+a.pdf, a.txt, a.fb2 {
+    padding-left:20px;
+    background: transparent url('img/pdf.png') no-repeat 3px 1px;
+}
+a.txt {
+    background-image:url('img/txt.png');
+}
+a.fb2 {
+    background-image:url('img/fb2.png');
+}
+.postItem a.pdf, .postItem a.fb2, .postItem a.txt {
+    background-position:3px 0;
+}
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    html {
+        font-size: 53.125% !important;
+    }
+    .ep-links {
+        height: 79px;
+    }
+    .gallery {
+        width: 1170px;
+        height: 321px;
+    }
+    .luna-quote {
+        right: 10px;
+        margin-top: 73%;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    html {
+        font-size: 45% !important;
+    }
+    .navbar-ep-main .navbar-brand {
+        font-size: 5rem;
+    }
+    .navbar-ep-topics .navbar-nav > li > a {
+        padding: 15px 7px;
+    }
+    .navbar-ep-topics, .navbar-ep-topics .navbar-brand {
+        font-size: 2.8rem;
+    }
+
+    .luna-quote {
+        right: 10px;
+        margin-top: 16.5%;
+    }
+    /*.sourcelink {*/
+        /*margin: 2% 0 0 84%;*/
+    /*}*/
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 40% !important;
+    }
+    .navbar-ep-main .navbar-brand {
+        font-size: 5rem;
+    }
+    .navbar-ep-main {
+        font-size: 2.6rem;
+    }
+    .navbar-ep-topics .navbar-nav > li > a {
+        padding: 15px 5px;
+    }
+    .navbar-ep-topics, .navbar-ep-topics .navbar-brand {
+        font-size: 2.4rem;
+    }
+    .luna-quote {
+        right: 10px;
+        margin-top: 13.5%;
+    }
+    /*.sourcelink {*/
+        /*margin: 2% 0 0 84%;*/
+    /*}*/
+}
+
+@media (min-width: 320px) and (max-width:767px){
+    html {
+        font-size: 38% !important;
+    }
+    .navbar-ep-main, .navbar-ep-topics {
+        font-size: 5rem;
+    }
+    .navbar-ep-main .navbar-nav > li > a,
+    .navbar-ep-topics .navbar-nav > li > a {
+        color: #000000;
+    }
+    .navbar-ep-main .navbar-nav > li > a:hover,
+    .navbar-ep-main .navbar-nav > li > a:focus {
+        color: #204d74;
+        background-color: transparent;
+    }
+    /*.sourcelink {*/
+        /*margin: 2% 0 0 44%;*/
+    /*}*/
+    .navbar-ep-topics .navbar-brand {
+        font-size: 3.2rem;
+    }
+    .footer .panel-body {
+        padding: 0px 15px 0px 15px;
+    }
+}
