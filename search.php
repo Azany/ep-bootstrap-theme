@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	
 <div class="col-lg-9">
-	<div id="archive-title">Результаты поиска по запросу "<?php /* Search Count */ $allsearch = &new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e(''); _e('<strong>'); echo $key; _e('</strong>'); wp_reset_query(); ?>"</div>
+	<div id="archive-title">Результаты поиска по запросу "<?php /* Search Count */ $allsearch = &new WP_Query("s=$s&showposts=-1"); $key = esc_html($s, 1); $count = $allsearch->post_count; _e(''); _e('<strong>'); echo $key; _e('</strong>'); wp_reset_query(); ?>"</div>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div class="postItem">
@@ -9,13 +9,13 @@
 		<div class="meta">
 			<div class="date"><?php the_time('j M, Y') ?></div>
 		</div>
-		<?php the_excerpt(); ?> 
+		<?php the_excerpt(); ?>
 		<div class="meta">
 			<div class="categs"><?php the_category(', ') ?></div>
 			<div><?php comments_popup_link('Нет комментариев', '1 комментарий', '% комментариев'); ?></div>
 		</div>
 	</div>
-	
+
 	<?php endwhile; ?>
 
 	<?php else : ?>

@@ -23,7 +23,7 @@
             <nav class="navbar-ep-main">
                 <div class="row ep-menu">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="https://test-ep.alterpony.ru">EveryPony.ru</a>
+                        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">EveryPony.ru</a>
                         <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#ep-links" style="float:left;">
                             <span class="sr-only">Toggle navigation</span>
                             <span>
@@ -45,7 +45,7 @@
                         <ul class="nav navbar-nav navbar-right hidden-sm">
                             <li><a href="https://twitter.com/everypony_ru" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
                                 </a></li>
-                            <li><a href="https://everypony.ru/feed" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i>
+                            <li><a href="<?php echo esc_url( home_url( '/feed' ) ); ?>" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i>
                                 </a></li>
                         </ul>
                     </div>
@@ -54,9 +54,14 @@
             </div> <!--  ep-links-->
             <div class="gallery">
                 <div class="col-lg-3">
-                    <form method="get" class="searchform" action="//everypony.ru/" >
-                       <input type="text" value="" placeholder="Поиск по блогу" name="s" id="s" />
+<!--                    <form method="get" class="searchform" action="//everypony.ru/" >-->
+<!--                       <input type="text" value="" placeholder="Поиск по блогу" name="s" id="s" />-->
+<!--                    </form>-->
+                    <form method="get" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <input type="text" name="s" id="s" placeholder="<?php echo "Поиск по блогу"; ?>" />
                     </form>
+
+
                      <div class="pony-time hidden-xs" id="time-header">
                      </div>
                  </div>
